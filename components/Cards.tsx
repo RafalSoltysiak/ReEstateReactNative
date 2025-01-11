@@ -37,7 +37,7 @@ export function FeaturedCard({ item, onPress }: Props) {
         <Text className="text-base font-rubik text-white">{item.address}</Text>
         <View className="flex-row items-center justify-between w-full">
           <Text className="text-xl font-rubik-extrabold text-white">
-            {item.price}
+            ${item.price}
           </Text>
           <Image source={icons.heart} className="size-5" />
         </View>
@@ -70,7 +70,7 @@ export default function Card({ item, onPress }: Props) {
         </Text>
         <View className="flex-row items-center justify-between mt-2">
           <Text className="text-base font-rubik-bold text-primary-300">
-            {item.price}
+            ${item.price}
           </Text>
           <Image source={icons.heart} className="w-5 h-5 mr-2" />
         </View>
